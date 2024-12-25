@@ -16,7 +16,7 @@ function RoomDetails() {
                 </div>
                 <div>
                     <label className="d-inline-block" style={{ backgroundColor: "#C59A71", borderRadius: "10px", color: "white", padding: "5px 10px", whiteSpace: "nowrap" }}>
-                        ราคา : 10000 บาท / คืน
+                        ราคา : 1,000,000 บาท / คืน
                     </label>
                 </div>
             </div>
@@ -65,7 +65,7 @@ function RoomDetails() {
             <div className="container mt-2">
                 <div className="row mb-4 g-2">
                     <div className="col-9">
-                        <div style={{height: "200px" }} className="d-flex rounded">
+                        <div style={{ height: "200px" }} className="d-flex rounded">
                             <div className="container my-4">
                                 <div className="d-flex flex-wrap gap-3 mt-3">
                                     <div className="d-flex align-items-center">
@@ -144,7 +144,7 @@ function RoomDetails() {
                                                 justifyContent: "center",
                                             }}
                                         >
-                                            <i className="bi bi-bicycle" style={{ color: "white", fontSize: "20px" }}></i>
+                                            <i className="bi bi-door-open" style={{ color: "white", fontSize: "20px" }}></i>
                                         </div>
                                         <span className="ms-2">อ่างอาบน้ำ</span>
                                     </div>
@@ -160,9 +160,57 @@ function RoomDetails() {
                                                 justifyContent: "center",
                                             }}
                                         >
-                                            <i className="bi bi-bicycle" style={{ color: "white", fontSize: "20px" }}></i>
+                                            <i className="bi bi-p-circle" style={{ color: "white", fontSize: "20px" }}></i>
                                         </div>
-                                        <span className="ms-2">ที่จอดรถ (2 คัน)</span>
+                                        <span className="ms-2">ที่จอดรถ</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <div
+                                            style={{
+                                                backgroundColor: "#3E2723",
+                                                width: "50px",
+                                                height: "50px",
+                                                borderRadius: "50%",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                            }}
+                                        >
+                                            <i className="bi bi-water" style={{ color: "white", fontSize: "20px" }}></i>
+                                        </div>
+                                        <span className="ms-2">สระว่ายน้ำ</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <div
+                                            style={{
+                                                backgroundColor: "#3E2723",
+                                                width: "50px",
+                                                height: "50px",
+                                                borderRadius: "50%",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                            }}
+                                        >
+                                            <i className="bi bi-person-check" style={{ color: "white", fontSize: "20px" }}></i>
+                                        </div>
+                                        <span className="ms-2">แม่บ้านทำความสะอาด</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <div
+                                            style={{
+                                                backgroundColor: "#3E2723",
+                                                width: "50px",
+                                                height: "50px",
+                                                borderRadius: "50%",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                            }}
+                                        >
+                                            <i className="bi bi-plug" style={{ color: "white", fontSize: "20px" }}></i>
+                                        </div>
+                                        <span className="ms-2">เครื่องใช้ไฟฟ้าอื่นๆ</span>
                                     </div>
                                 </div>
                             </div>
@@ -176,13 +224,13 @@ function RoomDetails() {
                     </div>
                 </div>
             </div>
-
+            <div class="text-start">
+                <h3><strong>เกี่ยวกับที่พัก</strong></h3>
+                <p>ห้องที่ตึงที่สุดในจักรวาลมาเวล มีขนาดกว้างขวางกว่าห้องมาตรฐานอย่างมาก เหมาะสำหรับครอบครัวหรือกลุ่มคน 7-10 คน ภายในห้องจะมีเตียงขนาดใหญ่ เช่น เตียงควีนไซส์หรือคิงไซส์ พร้อมสิ่งอำนวยความสะดวกครบครัน เช่น โทรทัศน์จอแบน, ผาเช็ดตัว, wi-fi, เครื่องปรับอากาศ, อ่างอาบนํ้า, สระว่ายนํ้า และมีบริการอาหารเช้า/เย็น ฟรี</p>
+            </div>
             <hr></hr>
 
-
-            <hr></hr>
-
-            <div className="container">
+            {/* <div className="container">
                 <h4>เกี่ยวกับห้องพัก</h4>
                 <p>ห้องที่ตึงที่สุดในจักรวาลมาเวล...</p>
             </div>
@@ -201,8 +249,9 @@ function RoomDetails() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
+
 export default RoomDetails;

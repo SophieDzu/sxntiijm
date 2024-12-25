@@ -25,7 +25,7 @@ function Review() {
                             style={{ height: "300px", objectFit: "cover" }}
                         />
                         <div className="card-body">
-                            <h6 className="card-title"><strong>ห้อง : ห้องที่ดีที่สุดในจักรวาลมาเวล</strong></h6>
+                            <h6 className="card-title"><strong>ห้อง : ห้องที่ตึงที่สุดในจักรวาลมาเวล</strong></h6>
                             <p className="card-text text-muted">
                                 <strong>user0001</strong> ห้องหรู วิวดีเยี่ยม ส่วนตัวมากและอาหารอร่อย โดยรวมประทับใจมากครับ
                             </p>
@@ -65,7 +65,7 @@ function Review() {
                                 <button
                                     className="btn btn-sm w-25"
                                     style={{ backgroundColor: "#3E2723", borderColor: "#3E2723", color: "#ffffff" }}
-                                    onClick={() => navigate('/room-details')} // เพิ่มการนำทางที่นี่
+                                    onClick={() => navigate('/roomdetails')}
                                 >
                                     เข้าดู
                                 </button>
