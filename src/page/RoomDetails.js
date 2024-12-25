@@ -171,7 +171,7 @@ function RoomDetails() {
                     </div>
                     <div className="col-3">
                         <div style={{ backgroundColor: "#E0E0E0", height: "200px" }} className="d-flex align-items-center justify-content-center rounded">
-                            <p>เนื้อหาในคอลัมน์ที่สอง</p>
+                            <p>เลือกวันที่จอง</p>
                         </div>
                     </div>
                 </div>
