@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -14,7 +15,7 @@ function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav me-auto">
                             <li className="nav-item">
-                                <a className="nav-link active text-white" aria-current="page" href="#">หน้าหลัก</a>
+                                <Link className="nav-link active text-white" to="/">หน้าหลัก</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link text-white" href="#">บริการ</a>

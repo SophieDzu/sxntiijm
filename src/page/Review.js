@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Review() {
+    const navigate = useNavigate();
     return (
 
         <div className="row me-4 ms-4 mt-4">
@@ -32,10 +34,13 @@ function Review() {
                                     <span className="text-warning">คะแนน:</span>
                                     {" ★★★★★"}
                                 </div>
-                                <button className="btn btn-sm w-25" style={{ backgroundColor: "#3E2723", borderColor: "#3E2723", color: "#ffffff" }}>
+                                <button
+                                    className="btn btn-sm w-25"
+                                    style={{ backgroundColor: "#3E2723", borderColor: "#3E2723", color: "#ffffff" }}
+                                    onClick={() => navigate('/roomdetails')}
+                                >
                                     เข้าดู
                                 </button>
-
                             </div>
                         </div>
                     </div>
@@ -48,7 +53,7 @@ function Review() {
                             style={{ height: "300px", objectFit: "cover" }}
                         />
                         <div className="card-body">
-                        <h6 className="card-title"><strong>ห้อง : ห้องที่ดีที่สุดในจักรวาลมาเวล V2</strong></h6>
+                            <h6 className="card-title"><strong>ห้อง : ห้องที่ดีที่สุดในจักรวาลมาเวล V2</strong></h6>
                             <p className="card-text text-muted">
                                 <strong>user0002</strong> นี่แหละ ถ้าอยากชิล ขอห้องเรียบ สงบมากโดยไม่ผิดหวัง
                             </p>
@@ -57,10 +62,13 @@ function Review() {
                                     <span className="text-warning">คะแนน:</span>
                                     {" ★★★★★"}
                                 </div>
-                                <button className="btn btn-sm w-25" style={{ backgroundColor: "#3E2723", borderColor: "#3E2723", color: "#ffffff" }}>
+                                <button
+                                    className="btn btn-sm w-25"
+                                    style={{ backgroundColor: "#3E2723", borderColor: "#3E2723", color: "#ffffff" }}
+                                    onClick={() => navigate('/room-details')} // เพิ่มการนำทางที่นี่
+                                >
                                     เข้าดู
                                 </button>
-
                             </div>
                         </div>
                     </div>

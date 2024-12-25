@@ -2,8 +2,8 @@ import React from "react";
 
 function RoomDetails() {
     return (
-        <div className="row mt-4">
-            <div className="container d-flex justify-content-start gap-3 me-4 ms-4 mb-4">
+        <div className="row mt-4 me-4 ms-4">
+            <div className="container d-flex justify-content-start gap-3 mb-4">
                 <div>
                     <label className="d-inline-block" style={{ backgroundColor: "#3E2723", borderRadius: "10px", color: "white", padding: "5px 10px", whiteSpace: "nowrap" }}>
                         ห้องพักที่ตึงที่สุดในจักรวาลมาเวล
@@ -15,40 +15,176 @@ function RoomDetails() {
                     </label>
                 </div>
                 <div>
-                    <label className="d-inline-block" style={{ backgroundColor: "#3E2723", borderRadius: "10px", color: "white", padding: "5px 10px", whiteSpace: "nowrap" }}>
+                    <label className="d-inline-block" style={{ backgroundColor: "#C59A71", borderRadius: "10px", color: "white", padding: "5px 10px", whiteSpace: "nowrap" }}>
                         ราคา : 10000 บาท / คืน
                     </label>
                 </div>
             </div>
 
-            <div className="container ms-4 me-4">
-                <div className="row">
+            <div className="container">
+                <div className="row g-2">
                     <div className="col-md-6">
-                        <img src="https://via.placeholder.com/1000x500" className="img-fluid rounded" alt="Image 1" />
+                        <img
+                            src="img/banner.jpg"
+                            className="img-fluid rounded"
+                            alt="Image 1"
+                            style={{ width: "100%", maxHeight: "400px" }}
+                        />
                     </div>
                     <div className="col-md-6">
                         <div className="row g-2">
-                            <div className="col-6"><img src="https://via.placeholder.com/250" className="img-fluid rounded" alt="Image 2" /></div>
-                            <div className="col-6"><img src="https://via.placeholder.com/250" className="img-fluid rounded" alt="Image 3" /></div>
-                            <div className="col-6"><img src="https://via.placeholder.com/250" className="img-fluid rounded" alt="Image 4" /></div>
-                            <div className="col-6"><img src="https://via.placeholder.com/250" className="img-fluid rounded" alt="Image 5" /></div>
+                            <div className="col-12">
+                                <img
+                                    src="img/banner.jpg"
+                                    className="img-fluid rounded"
+                                    alt="Wide Image"
+                                    style={{ width: "100%", maxHeight: "196px", objectFit: "cover" }}
+                                />
+                            </div>
+                            <div className="col-6">
+                                <img
+                                    src="img/banner3.jpg"
+                                    className="img-fluid rounded"
+                                    alt="Image 2"
+                                    style={{ width: "100%", maxHeight: "196px", objectFit: "cover" }}
+                                />
+                            </div>
+                            <div className="col-6">
+                                <img
+                                    src="img/banner3.jpg"
+                                    className="img-fluid rounded"
+                                    alt="Image 3"
+                                    style={{ width: "100%", maxHeight: "196px", objectFit: "cover" }}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="container my-4">
-                <div className="row text-center feature-icons">
-                    <div className="col"><i className="bi bi-wifi"></i><br /><span>Wi-Fi</span></div>
-                    <div className="col"><i className="bi bi-tree"></i><br /><span>สวนสวย</span></div>
-                    <div className="col"><i className="bi bi-bicycle"></i><br /><span>จักรยานฟรี</span></div>
-                    <div className="col"><i className="bi bi-cup"></i><br /><span>อาหารเช้า</span></div>
+            <div className="container mt-2">
+                <div className="row mb-4 g-2">
+                    <div className="col-9">
+                        <div style={{height: "200px" }} className="d-flex rounded">
+                            <div className="container my-4">
+                                <div className="d-flex flex-wrap gap-3 mt-3">
+                                    <div className="d-flex align-items-center">
+                                        <div
+                                            style={{
+                                                backgroundColor: "#3E2723",
+                                                width: "50px",
+                                                height: "50px",
+                                                borderRadius: "50%",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                            }}
+                                        >
+                                            <i className="bi bi-wifi" style={{ color: "white", fontSize: "20px" }}></i>
+                                        </div>
+                                        <span className="ms-2">Wi-Fi</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <div
+                                            style={{
+                                                backgroundColor: "#3E2723",
+                                                width: "50px",
+                                                height: "50px",
+                                                borderRadius: "50%",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                            }}
+                                        >
+                                            <i className="bi bi-cup-hot" style={{ color: "white", fontSize: "20px" }}></i>
+                                        </div>
+                                        <span className="ms-2">อาหารเช้า</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <div
+                                            style={{
+                                                backgroundColor: "#3E2723",
+                                                width: "50px",
+                                                height: "50px",
+                                                borderRadius: "50%",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                            }}
+                                        >
+                                            <i className="bi bi-tree" style={{ color: "white", fontSize: "20px" }}></i>
+                                        </div>
+                                        <span className="ms-2">สวนส่วนตัว</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <div
+                                            style={{
+                                                backgroundColor: "#3E2723",
+                                                width: "50px",
+                                                height: "50px",
+                                                borderRadius: "50%",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                            }}
+                                        >
+                                            <i className="bi bi-bicycle" style={{ color: "white", fontSize: "20px" }}></i>
+                                        </div>
+                                        <span className="ms-2">จักรยาน</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <div
+                                            style={{
+                                                backgroundColor: "#3E2723",
+                                                width: "50px",
+                                                height: "50px",
+                                                borderRadius: "50%",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                            }}
+                                        >
+                                            <i className="bi bi-bicycle" style={{ color: "white", fontSize: "20px" }}></i>
+                                        </div>
+                                        <span className="ms-2">อ่างอาบน้ำ</span>
+                                    </div>
+                                    <div className="d-flex align-items-center">
+                                        <div
+                                            style={{
+                                                backgroundColor: "#3E2723",
+                                                width: "50px",
+                                                height: "50px",
+                                                borderRadius: "50%",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                            }}
+                                        >
+                                            <i className="bi bi-bicycle" style={{ color: "white", fontSize: "20px" }}></i>
+                                        </div>
+                                        <span className="ms-2">ที่จอดรถ (2 คัน)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="col-3">
+                        <div style={{ backgroundColor: "#E0E0E0", height: "200px" }} className="d-flex align-items-center justify-content-center rounded">
+                            <p>เนื้อหาในคอลัมน์ที่สอง</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <hr></hr>
+
+
+            <hr></hr>
+
             <div className="container">
                 <h4>เกี่ยวกับห้องพัก</h4>
-                <p>ห้องที่ดีที่สุดในจักรวาลนามอล...</p>
+                <p>ห้องที่ตึงที่สุดในจักรวาลมาเวล...</p>
             </div>
 
             <div className="container my-4">
